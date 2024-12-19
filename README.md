@@ -28,26 +28,6 @@ A highly configurable Bash script for testing the security of Oracle databases b
 
 
 
-## File Structure
-Here's what your project directory will look like:
-
-```plaintext
-OracleBuster/
-│
-├── OracleBuster.sh         # Main script
-├── ip_list.txt             # List of target IPs
-├── port_list.txt           # List of target ports
-├── sid.txt                 # List of Oracle SIDs
-├── users.txt               # List of usernames
-├── passwords.txt           # List of passwords
-├── success.txt             # Logs of successful attempts
-├── errors.txt              # Logs of errors and timeouts
-├── README.md               # Project documentation
-└── LICENSE                 # License information
-
-
----
-Step 2: Prepare Input Files
 Create the following input files in the same directory as the script. Each file should have one entry per line.
 
 1. ip_list.txt (Target IP addresses)
@@ -104,3 +84,24 @@ Copia codice
 Errore: Timeout per IP=192.168.1.1, Porta=1521, SID=XE
 
 ```plaintext
+
+
+
+## File Structure
+Here's what your project directory will look like:
+
+```plaintext
+OracleBuster/
+│
+├── OracleBuster.sh         # Main script
+├── ip_list.txt             # List of target IPs
+├── port_list.txt           # List of target ports
+├── sid.txt                 # List of Oracle SIDs
+├── users.txt               # List of usernames
+├── passwords.txt           # List of passwords
+├── success.txt             # Logs of successful attempts
+├── errors.txt              # Logs of errors and timeouts
+├── README.md               # Project documentation
+└── LICENSE                 # License information
+
+
