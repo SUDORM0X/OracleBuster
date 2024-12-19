@@ -4,8 +4,6 @@ A highly configurable Bash script for testing the security of Oracle databases b
 
 
 
-# OracleBuster
-
 ## Overview
 **OracleBuster** is a powerful and customizable Bash script designed to test the security of Oracle databases. By automating brute-force testing, it identifies potential vulnerabilities in IPs, ports, SIDs, usernames, and passwords.
 
