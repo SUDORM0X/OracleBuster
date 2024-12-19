@@ -31,59 +31,49 @@ A highly configurable Bash script for testing the security of Oracle databases b
 Create the following input files in the same directory as the script. Each file should have one entry per line.
 
 1. ip_list.txt (Target IP addresses)
-plaintext
-Copia codice
+```plaintext
 192.168.1.1
 10.0.0.2
+```
+
 2. port_list.txt (Target Oracle database ports)
-plaintext
-Copia codice
+```
 1521
 1522
+```
+
 3. sid.txt (Oracle System Identifiers - SIDs)
-plaintext
-Copia codice
+```
 ORCL
 XE
+```
+
 4. users.txt (Database usernames)
-plaintext
-Copia codice
+```
 admin
 sys
 scott
+```
+
 5. passwords.txt (Database passwords)
-plaintext
-Copia codice
+```
 oracle
 admin
 password123
-Step 3: Configure Timeout (Optional)
-Edit the script file (OracleBuster.sh) and set the timeout_duration variable to define the connection timeout in seconds:
+```
 
-bash
-Copia codice
-timeout_duration=5  # Default is 5 seconds
-Step 4: Run the Script
-To execute the script, use the following command:
 
-bash
-Copia codice
-bash OracleBuster.sh
-Step 5: Review the Results
+
+Step 6: Review the Results
 After the script completes, review the following output files for results:
 
 success.txt: Contains details of successful login attempts. Example:
 
-plaintext
-Copia codice
+```
 Trovato: IP=192.168.1.1, Porta=1521, SID=XE, USER=admin, PASS=oracle
-errors.txt: Contains errors and timeout logs for failed attempts. Example:
+```
 
-plaintext
-Copia codice
-Errore: Timeout per IP=192.168.1.1, Porta=1521, SID=XE
 
-```plaintext
 
 
 
